@@ -1,0 +1,669 @@
+2019-08-10 21:55:02 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-10 21:55:03 DEBUG BasicClientConnectionManager:158 - Get connection for route {s}->https://maps.googleapis.com
+2019-08-10 21:55:03 DEBUG DefaultClientConnectionOperator:175 - Connecting to maps.googleapis.com:443
+2019-08-10 21:55:03 DEBUG RequestAddCookies:122 - CookieSpec selected: best-match
+2019-08-10 21:55:03 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+2019-08-10 21:55:03 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2019-08-10 21:55:03 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2019-08-10 21:55:03 DEBUG DefaultHttpClient:680 - Attempt 1 to execute request
+2019-08-10 21:55:03 DEBUG DefaultClientConnection:268 - Sending request: GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 21:55:03 DEBUG wire:72 -  >> "GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  >> "Host: maps.googleapis.com[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  >> "[\r][\n]"
+2019-08-10 21:55:03 DEBUG headers:272 - >> GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 21:55:03 DEBUG headers:275 - >> Host: maps.googleapis.com
+2019-08-10 21:55:03 DEBUG headers:275 - >> Connection: Keep-Alive
+2019-08-10 21:55:03 DEBUG headers:275 - >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+2019-08-10 21:55:03 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Date: Sat, 10 Aug 2019 16:25:01 GMT[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Cache-Control: no-cache, must-revalidate[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Server: mafe[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "X-XSS-Protection: 0[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Server-Timing: gfet4t7; dur=217[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Accept-Ranges: none[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Vary: Accept-Language,Accept-Encoding[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-08-10 21:55:03 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-10 21:55:03 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2019-08-10 21:55:03 DEBUG headers:256 - << HTTP/1.1 200 OK
+2019-08-10 21:55:03 DEBUG headers:259 - << Content-Type: application/json; charset=UTF-8
+2019-08-10 21:55:03 DEBUG headers:259 - << Date: Sat, 10 Aug 2019 16:25:01 GMT
+2019-08-10 21:55:03 DEBUG headers:259 - << Pragma: no-cache
+2019-08-10 21:55:03 DEBUG headers:259 - << Expires: Fri, 01 Jan 1990 00:00:00 GMT
+2019-08-10 21:55:03 DEBUG headers:259 - << Cache-Control: no-cache, must-revalidate
+2019-08-10 21:55:03 DEBUG headers:259 - << Access-Control-Allow-Origin: *
+2019-08-10 21:55:03 DEBUG headers:259 - << Server: mafe
+2019-08-10 21:55:03 DEBUG headers:259 - << X-XSS-Protection: 0
+2019-08-10 21:55:03 DEBUG headers:259 - << X-Frame-Options: SAMEORIGIN
+2019-08-10 21:55:03 DEBUG headers:259 - << Server-Timing: gfet4t7; dur=217
+2019-08-10 21:55:03 DEBUG headers:259 - << Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+2019-08-10 21:55:03 DEBUG headers:259 - << Accept-Ranges: none
+2019-08-10 21:55:03 DEBUG headers:259 - << Vary: Accept-Language,Accept-Encoding
+2019-08-10 21:55:03 DEBUG headers:259 - << Transfer-Encoding: chunked
+2019-08-10 21:55:03 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-08-10 21:56:25 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-10 21:56:25 DEBUG BasicClientConnectionManager:158 - Get connection for route {s}->https://maps.googleapis.com
+2019-08-10 21:56:25 DEBUG DefaultClientConnectionOperator:175 - Connecting to maps.googleapis.com:443
+2019-08-10 21:56:26 DEBUG RequestAddCookies:122 - CookieSpec selected: best-match
+2019-08-10 21:56:26 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+2019-08-10 21:56:26 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2019-08-10 21:56:26 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2019-08-10 21:56:26 DEBUG DefaultHttpClient:680 - Attempt 1 to execute request
+2019-08-10 21:56:26 DEBUG DefaultClientConnection:268 - Sending request: GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 21:56:26 DEBUG wire:72 -  >> "GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  >> "Host: maps.googleapis.com[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  >> "[\r][\n]"
+2019-08-10 21:56:26 DEBUG headers:272 - >> GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 21:56:26 DEBUG headers:275 - >> Host: maps.googleapis.com
+2019-08-10 21:56:26 DEBUG headers:275 - >> Connection: Keep-Alive
+2019-08-10 21:56:26 DEBUG headers:275 - >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+2019-08-10 21:56:26 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Date: Sat, 10 Aug 2019 16:26:24 GMT[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Cache-Control: no-cache, must-revalidate[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Server: mafe[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "X-XSS-Protection: 0[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Server-Timing: gfet4t7; dur=214[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Accept-Ranges: none[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Vary: Accept-Language,Accept-Encoding[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-08-10 21:56:26 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-10 21:56:26 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2019-08-10 21:56:26 DEBUG headers:256 - << HTTP/1.1 200 OK
+2019-08-10 21:56:26 DEBUG headers:259 - << Content-Type: application/json; charset=UTF-8
+2019-08-10 21:56:26 DEBUG headers:259 - << Date: Sat, 10 Aug 2019 16:26:24 GMT
+2019-08-10 21:56:26 DEBUG headers:259 - << Pragma: no-cache
+2019-08-10 21:56:26 DEBUG headers:259 - << Expires: Fri, 01 Jan 1990 00:00:00 GMT
+2019-08-10 21:56:26 DEBUG headers:259 - << Cache-Control: no-cache, must-revalidate
+2019-08-10 21:56:26 DEBUG headers:259 - << Access-Control-Allow-Origin: *
+2019-08-10 21:56:26 DEBUG headers:259 - << Server: mafe
+2019-08-10 21:56:26 DEBUG headers:259 - << X-XSS-Protection: 0
+2019-08-10 21:56:26 DEBUG headers:259 - << X-Frame-Options: SAMEORIGIN
+2019-08-10 21:56:26 DEBUG headers:259 - << Server-Timing: gfet4t7; dur=214
+2019-08-10 21:56:26 DEBUG headers:259 - << Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+2019-08-10 21:56:26 DEBUG headers:259 - << Accept-Ranges: none
+2019-08-10 21:56:26 DEBUG headers:259 - << Vary: Accept-Language,Accept-Encoding
+2019-08-10 21:56:26 DEBUG headers:259 - << Transfer-Encoding: chunked
+2019-08-10 21:56:26 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-08-10 21:57:36 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-10 21:57:36 DEBUG BasicClientConnectionManager:158 - Get connection for route {s}->https://maps.googleapis.com
+2019-08-10 21:57:36 DEBUG DefaultClientConnectionOperator:175 - Connecting to maps.googleapis.com:443
+2019-08-10 21:57:37 DEBUG RequestAddCookies:122 - CookieSpec selected: best-match
+2019-08-10 21:57:37 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+2019-08-10 21:57:37 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2019-08-10 21:57:37 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2019-08-10 21:57:37 DEBUG DefaultHttpClient:680 - Attempt 1 to execute request
+2019-08-10 21:57:37 DEBUG DefaultClientConnection:268 - Sending request: GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 21:57:37 DEBUG wire:72 -  >> "GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  >> "Host: maps.googleapis.com[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  >> "[\r][\n]"
+2019-08-10 21:57:37 DEBUG headers:272 - >> GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 21:57:37 DEBUG headers:275 - >> Host: maps.googleapis.com
+2019-08-10 21:57:37 DEBUG headers:275 - >> Connection: Keep-Alive
+2019-08-10 21:57:37 DEBUG headers:275 - >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+2019-08-10 21:57:37 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Date: Sat, 10 Aug 2019 16:27:35 GMT[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Cache-Control: no-cache, must-revalidate[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Server: mafe[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "X-XSS-Protection: 0[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Server-Timing: gfet4t7; dur=217[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Accept-Ranges: none[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Vary: Accept-Language,Accept-Encoding[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-08-10 21:57:37 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-10 21:57:37 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2019-08-10 21:57:37 DEBUG headers:256 - << HTTP/1.1 200 OK
+2019-08-10 21:57:37 DEBUG headers:259 - << Content-Type: application/json; charset=UTF-8
+2019-08-10 21:57:37 DEBUG headers:259 - << Date: Sat, 10 Aug 2019 16:27:35 GMT
+2019-08-10 21:57:37 DEBUG headers:259 - << Pragma: no-cache
+2019-08-10 21:57:37 DEBUG headers:259 - << Expires: Fri, 01 Jan 1990 00:00:00 GMT
+2019-08-10 21:57:37 DEBUG headers:259 - << Cache-Control: no-cache, must-revalidate
+2019-08-10 21:57:37 DEBUG headers:259 - << Access-Control-Allow-Origin: *
+2019-08-10 21:57:37 DEBUG headers:259 - << Server: mafe
+2019-08-10 21:57:37 DEBUG headers:259 - << X-XSS-Protection: 0
+2019-08-10 21:57:37 DEBUG headers:259 - << X-Frame-Options: SAMEORIGIN
+2019-08-10 21:57:37 DEBUG headers:259 - << Server-Timing: gfet4t7; dur=217
+2019-08-10 21:57:37 DEBUG headers:259 - << Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+2019-08-10 21:57:37 DEBUG headers:259 - << Accept-Ranges: none
+2019-08-10 21:57:37 DEBUG headers:259 - << Vary: Accept-Language,Accept-Encoding
+2019-08-10 21:57:37 DEBUG headers:259 - << Transfer-Encoding: chunked
+2019-08-10 21:57:37 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-08-10 21:57:37 INFO  ResponseUtil:22 - Sourcing file name = /Users/hegdemh/Desktop/Personal/others/GoogleLocationAPITest/googleapitest/src/test/resources/Response.json
+2019-08-10 21:59:12 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-10 21:59:12 DEBUG BasicClientConnectionManager:158 - Get connection for route {s}->https://maps.googleapis.com
+2019-08-10 21:59:12 DEBUG DefaultClientConnectionOperator:175 - Connecting to maps.googleapis.com:443
+2019-08-10 21:59:12 DEBUG RequestAddCookies:122 - CookieSpec selected: best-match
+2019-08-10 21:59:12 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+2019-08-10 21:59:12 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2019-08-10 21:59:12 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2019-08-10 21:59:12 DEBUG DefaultHttpClient:680 - Attempt 1 to execute request
+2019-08-10 21:59:12 DEBUG DefaultClientConnection:268 - Sending request: GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 21:59:12 DEBUG wire:72 -  >> "GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1[\r][\n]"
+2019-08-10 21:59:12 DEBUG wire:72 -  >> "Host: maps.googleapis.com[\r][\n]"
+2019-08-10 21:59:12 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-08-10 21:59:12 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+2019-08-10 21:59:12 DEBUG wire:72 -  >> "[\r][\n]"
+2019-08-10 21:59:12 DEBUG headers:272 - >> GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 21:59:12 DEBUG headers:275 - >> Host: maps.googleapis.com
+2019-08-10 21:59:12 DEBUG headers:275 - >> Connection: Keep-Alive
+2019-08-10 21:59:12 DEBUG headers:275 - >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+2019-08-10 21:59:13 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Date: Sat, 10 Aug 2019 16:29:11 GMT[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Cache-Control: no-cache, must-revalidate[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Server: mafe[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "X-XSS-Protection: 0[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Server-Timing: gfet4t7; dur=222[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Accept-Ranges: none[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Vary: Accept-Language,Accept-Encoding[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-08-10 21:59:13 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-10 21:59:13 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2019-08-10 21:59:13 DEBUG headers:256 - << HTTP/1.1 200 OK
+2019-08-10 21:59:13 DEBUG headers:259 - << Content-Type: application/json; charset=UTF-8
+2019-08-10 21:59:13 DEBUG headers:259 - << Date: Sat, 10 Aug 2019 16:29:11 GMT
+2019-08-10 21:59:13 DEBUG headers:259 - << Pragma: no-cache
+2019-08-10 21:59:13 DEBUG headers:259 - << Expires: Fri, 01 Jan 1990 00:00:00 GMT
+2019-08-10 21:59:13 DEBUG headers:259 - << Cache-Control: no-cache, must-revalidate
+2019-08-10 21:59:13 DEBUG headers:259 - << Access-Control-Allow-Origin: *
+2019-08-10 21:59:13 DEBUG headers:259 - << Server: mafe
+2019-08-10 21:59:13 DEBUG headers:259 - << X-XSS-Protection: 0
+2019-08-10 21:59:13 DEBUG headers:259 - << X-Frame-Options: SAMEORIGIN
+2019-08-10 21:59:13 DEBUG headers:259 - << Server-Timing: gfet4t7; dur=222
+2019-08-10 21:59:13 DEBUG headers:259 - << Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+2019-08-10 21:59:13 DEBUG headers:259 - << Accept-Ranges: none
+2019-08-10 21:59:13 DEBUG headers:259 - << Vary: Accept-Language,Accept-Encoding
+2019-08-10 21:59:13 DEBUG headers:259 - << Transfer-Encoding: chunked
+2019-08-10 21:59:13 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-08-10 21:59:13 INFO  ResponseUtil:22 - Sourcing file name = /Users/hegdemh/Desktop/Personal/others/GoogleLocationAPITest/googleapitest/src/test/resources/Response.json
+2019-08-10 22:08:55 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-10 22:08:55 DEBUG BasicClientConnectionManager:158 - Get connection for route {s}->https://maps.googleapis.com
+2019-08-10 22:08:55 DEBUG DefaultClientConnectionOperator:175 - Connecting to maps.googleapis.com:443
+2019-08-10 22:08:55 DEBUG RequestAddCookies:122 - CookieSpec selected: best-match
+2019-08-10 22:08:55 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+2019-08-10 22:08:55 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2019-08-10 22:08:55 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2019-08-10 22:08:55 DEBUG DefaultHttpClient:680 - Attempt 1 to execute request
+2019-08-10 22:08:55 DEBUG DefaultClientConnection:268 - Sending request: GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 22:08:55 DEBUG wire:72 -  >> "GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1[\r][\n]"
+2019-08-10 22:08:55 DEBUG wire:72 -  >> "Host: maps.googleapis.com[\r][\n]"
+2019-08-10 22:08:55 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-08-10 22:08:55 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+2019-08-10 22:08:55 DEBUG wire:72 -  >> "[\r][\n]"
+2019-08-10 22:08:55 DEBUG headers:272 - >> GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 22:08:55 DEBUG headers:275 - >> Host: maps.googleapis.com
+2019-08-10 22:08:55 DEBUG headers:275 - >> Connection: Keep-Alive
+2019-08-10 22:08:55 DEBUG headers:275 - >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+2019-08-10 22:08:56 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Date: Sat, 10 Aug 2019 16:38:54 GMT[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Cache-Control: no-cache, must-revalidate[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Server: mafe[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "X-XSS-Protection: 0[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Server-Timing: gfet4t7; dur=216[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Accept-Ranges: none[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Vary: Accept-Language,Accept-Encoding[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-08-10 22:08:56 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-10 22:08:56 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2019-08-10 22:08:56 DEBUG headers:256 - << HTTP/1.1 200 OK
+2019-08-10 22:08:56 DEBUG headers:259 - << Content-Type: application/json; charset=UTF-8
+2019-08-10 22:08:56 DEBUG headers:259 - << Date: Sat, 10 Aug 2019 16:38:54 GMT
+2019-08-10 22:08:56 DEBUG headers:259 - << Pragma: no-cache
+2019-08-10 22:08:56 DEBUG headers:259 - << Expires: Fri, 01 Jan 1990 00:00:00 GMT
+2019-08-10 22:08:56 DEBUG headers:259 - << Cache-Control: no-cache, must-revalidate
+2019-08-10 22:08:56 DEBUG headers:259 - << Access-Control-Allow-Origin: *
+2019-08-10 22:08:56 DEBUG headers:259 - << Server: mafe
+2019-08-10 22:08:56 DEBUG headers:259 - << X-XSS-Protection: 0
+2019-08-10 22:08:56 DEBUG headers:259 - << X-Frame-Options: SAMEORIGIN
+2019-08-10 22:08:56 DEBUG headers:259 - << Server-Timing: gfet4t7; dur=216
+2019-08-10 22:08:56 DEBUG headers:259 - << Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+2019-08-10 22:08:56 DEBUG headers:259 - << Accept-Ranges: none
+2019-08-10 22:08:56 DEBUG headers:259 - << Vary: Accept-Language,Accept-Encoding
+2019-08-10 22:08:56 DEBUG headers:259 - << Transfer-Encoding: chunked
+2019-08-10 22:08:56 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-08-10 22:08:56 INFO  ResponseUtil:22 - Sourcing file name = /Users/hegdemh/Desktop/Personal/others/GoogleLocationAPITest/googleapitest/src/test/resources/Response.json
+2019-08-10 22:08:56 INFO  ResponseUtil:34 - Formatted address= 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+2019-08-10 22:08:56 INFO  TestGeoCode:66 - Obtianed address = 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+2019-08-10 22:10:40 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-10 22:10:40 DEBUG BasicClientConnectionManager:158 - Get connection for route {s}->https://maps.googleapis.com
+2019-08-10 22:10:40 DEBUG DefaultClientConnectionOperator:175 - Connecting to maps.googleapis.com:443
+2019-08-10 22:10:41 DEBUG RequestAddCookies:122 - CookieSpec selected: best-match
+2019-08-10 22:10:41 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+2019-08-10 22:10:41 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2019-08-10 22:10:41 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2019-08-10 22:10:41 DEBUG DefaultHttpClient:680 - Attempt 1 to execute request
+2019-08-10 22:10:41 DEBUG DefaultClientConnection:268 - Sending request: GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 22:10:41 DEBUG wire:72 -  >> "GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  >> "Host: maps.googleapis.com[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  >> "[\r][\n]"
+2019-08-10 22:10:41 DEBUG headers:272 - >> GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc HTTP/1.1
+2019-08-10 22:10:41 DEBUG headers:275 - >> Host: maps.googleapis.com
+2019-08-10 22:10:41 DEBUG headers:275 - >> Connection: Keep-Alive
+2019-08-10 22:10:41 DEBUG headers:275 - >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+2019-08-10 22:10:41 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Date: Sat, 10 Aug 2019 16:40:39 GMT[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Cache-Control: no-cache, must-revalidate[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Server: mafe[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "X-XSS-Protection: 0[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Server-Timing: gfet4t7; dur=219[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Accept-Ranges: none[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Vary: Accept-Language,Accept-Encoding[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-08-10 22:10:41 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-10 22:10:41 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2019-08-10 22:10:41 DEBUG headers:256 - << HTTP/1.1 200 OK
+2019-08-10 22:10:41 DEBUG headers:259 - << Content-Type: application/json; charset=UTF-8
+2019-08-10 22:10:41 DEBUG headers:259 - << Date: Sat, 10 Aug 2019 16:40:39 GMT
+2019-08-10 22:10:41 DEBUG headers:259 - << Pragma: no-cache
+2019-08-10 22:10:41 DEBUG headers:259 - << Expires: Fri, 01 Jan 1990 00:00:00 GMT
+2019-08-10 22:10:41 DEBUG headers:259 - << Cache-Control: no-cache, must-revalidate
+2019-08-10 22:10:41 DEBUG headers:259 - << Access-Control-Allow-Origin: *
+2019-08-10 22:10:41 DEBUG headers:259 - << Server: mafe
+2019-08-10 22:10:41 DEBUG headers:259 - << X-XSS-Protection: 0
+2019-08-10 22:10:41 DEBUG headers:259 - << X-Frame-Options: SAMEORIGIN
+2019-08-10 22:10:41 DEBUG headers:259 - << Server-Timing: gfet4t7; dur=219
+2019-08-10 22:10:41 DEBUG headers:259 - << Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+2019-08-10 22:10:41 DEBUG headers:259 - << Accept-Ranges: none
+2019-08-10 22:10:41 DEBUG headers:259 - << Vary: Accept-Language,Accept-Encoding
+2019-08-10 22:10:41 DEBUG headers:259 - << Transfer-Encoding: chunked
+2019-08-10 22:10:41 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-08-10 22:10:41 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+2019-08-10 22:10:41 INFO  TestGeoCode:66 - lattitude = 37.4224764, and longitude = -122.0842499
+2019-08-11 11:51:38 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-11 11:51:38 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+2019-08-11 11:51:38 INFO  TestGeoCode:66 - lattitude = 37.0, and longitude = -122.0
+2019-08-11 11:52:42 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-11 11:52:42 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+2019-08-11 11:52:42 INFO  TestGeoCode:66 - lattitude = 374.0, and longitude = -1220.0
+2019-08-11 11:53:50 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-11 11:53:50 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+2019-08-11 11:53:50 INFO  TestGeoCode:66 - lattitude = 37.0, and longitude = -122.0
+2019-08-11 11:56:01 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-11 11:56:01 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+2019-08-11 11:56:01 INFO  TestGeoCode:66 - lattitude = 37.42, and longitude = -122.08
+2019-08-11 12:18:46 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-11 12:18:46 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+2019-08-11 12:19:35 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA6UXVeXF1c5fcJn7pJ2rkAXLlXHOuTLtc
+2019-08-11 12:19:35 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+2019-08-11 12:53:20 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyBRruXyowk5b5q9JkNbVAnmTDbZO_5ekFU
+2019-08-11 12:54:09 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyBRruXyowk5b5q9JkNbVAnmTDbZO_5ekFU
+2019-08-11 12:54:09 DEBUG BasicClientConnectionManager:158 - Get connection for route {s}->https://maps.googleapis.com
+2019-08-11 12:54:10 DEBUG DefaultClientConnectionOperator:175 - Connecting to maps.googleapis.com:443
+2019-08-11 12:54:10 DEBUG RequestAddCookies:122 - CookieSpec selected: best-match
+2019-08-11 12:54:10 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+2019-08-11 12:54:10 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2019-08-11 12:54:10 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2019-08-11 12:54:10 DEBUG DefaultHttpClient:680 - Attempt 1 to execute request
+2019-08-11 12:54:10 DEBUG DefaultClientConnection:268 - Sending request: GET /maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyBRruXyowk5b5q9JkNbVAnmTDbZO_5ekFU HTTP/1.1
+2019-08-11 12:54:10 DEBUG wire:72 -  >> "GET /maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyBRruXyowk5b5q9JkNbVAnmTDbZO_5ekFU HTTP/1.1[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  >> "Host: maps.googleapis.com[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  >> "[\r][\n]"
+2019-08-11 12:54:10 DEBUG headers:272 - >> GET /maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyBRruXyowk5b5q9JkNbVAnmTDbZO_5ekFU HTTP/1.1
+2019-08-11 12:54:10 DEBUG headers:275 - >> Host: maps.googleapis.com
+2019-08-11 12:54:10 DEBUG headers:275 - >> Connection: Keep-Alive
+2019-08-11 12:54:10 DEBUG headers:275 - >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+2019-08-11 12:54:10 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "Date: Sun, 11 Aug 2019 07:24:08 GMT[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "Expires: Sun, 11 Aug 2019 07:24:38 GMT[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "Cache-Control: public, max-age=30[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "Server: mafe[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "X-XSS-Protection: 0[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "Server-Timing: gfet4t7; dur=382[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"[\r][\n]"
+2019-08-11 12:54:10 DEBUG wire:72 -  << "Accept-Ranges: none[\r][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "Vary: Accept-Language,Accept-Encoding[\r][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-11 12:54:11 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2019-08-11 12:54:11 DEBUG headers:256 - << HTTP/1.1 200 OK
+2019-08-11 12:54:11 DEBUG headers:259 - << Content-Type: application/json; charset=UTF-8
+2019-08-11 12:54:11 DEBUG headers:259 - << Date: Sun, 11 Aug 2019 07:24:08 GMT
+2019-08-11 12:54:11 DEBUG headers:259 - << Expires: Sun, 11 Aug 2019 07:24:38 GMT
+2019-08-11 12:54:11 DEBUG headers:259 - << Cache-Control: public, max-age=30
+2019-08-11 12:54:11 DEBUG headers:259 - << Access-Control-Allow-Origin: *
+2019-08-11 12:54:11 DEBUG headers:259 - << Server: mafe
+2019-08-11 12:54:11 DEBUG headers:259 - << X-XSS-Protection: 0
+2019-08-11 12:54:11 DEBUG headers:259 - << X-Frame-Options: SAMEORIGIN
+2019-08-11 12:54:11 DEBUG headers:259 - << Server-Timing: gfet4t7; dur=382
+2019-08-11 12:54:11 DEBUG headers:259 - << Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+2019-08-11 12:54:11 DEBUG headers:259 - << Accept-Ranges: none
+2019-08-11 12:54:11 DEBUG headers:259 - << Vary: Accept-Language,Accept-Encoding
+2019-08-11 12:54:11 DEBUG headers:259 - << Transfer-Encoding: chunked
+2019-08-11 12:54:11 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-08-11 12:54:11 DEBUG wire:72 -  << "aa7[\r][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "{[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "   "results" : [[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "      {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "         "address_components" : [[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "10",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "10",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "types" : [ "street_number" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "Varthur Road",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "Varthur Rd",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "types" : [ "route" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "Opp. D Mart",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "Opp. D Mart",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "types" : [ "neighborhood", "political" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "Siddapura",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "Siddapura",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "types" : [ "political", "sublocality", "sublocality_level_2" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "Brookefield",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "Brookefield",[\n]"
+2019-08-11 12:54:11 DEBUG wire:86 -  << "               "types" : [ "political", "sublocality", "sublocality_l"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "evel_1" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "Bengaluru",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "Bengaluru",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "types" : [ "locality", "political" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "Bangalore Urban",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "Bangalore Urban",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "types" : [ "administrative_area_level_2", "political" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "Karnataka",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "KA",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "types" : [ "administrative_area_level_1", "political" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "India",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "IN",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "types" : [ "country", "political" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "long_name" : "560066",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "short_name" : "560066",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "types" : [ "postal_code" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            }[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "         ],[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "         "formatted_address" : "10, Varthur Rd, Opp. D Mart, Siddapura, Brookefield, Bengaluru, Karnataka 560066, India",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "         "geometry" : {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            "location" : {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "lat" : 12.9567531,[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "lng" : 77.728298[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            "location_type" : "ROOFTOP",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            "viewport" : {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               "northeast" : {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "                  "lat" : 12.9581020802915,[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "                  "lng" : 77.72964698029151[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               },[\n]"
+2019-08-11 12:54:11 DEBUG wire:86 -  << "  "
+2019-08-11 12:54:11 DEBUG wire:72 -  << "             "southwest" : {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "                  "lat" : 12.9554041197085,[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "                  "lng" : 77.7269490197085[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "               }[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            }[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "         },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "         "place_id" : "ChIJoajn-xMSrjsRdppM0vvOb2Y",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "         "plus_code" : {[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            "compound_code" : "XP4H+P8 Bengaluru, Karnataka, India",[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "            "global_code" : "7J4VXP4H+P8"[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "         },[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "         "types" : [ "establishment", "point_of_interest", "real_estate_agency" ][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "      }[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "   ],[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "   "status" : "OK"[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "}[\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "0[\r][\n]"
+2019-08-11 12:54:11 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-11 12:54:11 DEBUG BasicClientConnectionManager:196 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4d02f94e
+2019-08-11 12:54:11 DEBUG BasicClientConnectionManager:221 - Connection can be kept alive indefinitely
+2019-08-11 12:54:11 INFO  ResponseUtil:33 - Formatted address= 10, Varthur Rd, Opp. D Mart, Siddapura, Brookefield, Bengaluru, Karnataka 560066, India
+2019-08-11 12:54:11 ERROR ValidatorUtil:45 - Expected value 77.73 in field longitude, but actual value obtained 78.72
+2019-08-11 13:32:53 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U
+2019-08-11 13:32:54 DEBUG BasicClientConnectionManager:158 - Get connection for route {s}->https://maps.googleapis.com
+2019-08-11 13:32:54 DEBUG DefaultClientConnectionOperator:175 - Connecting to maps.googleapis.com:443
+2019-08-11 13:32:55 DEBUG RequestAddCookies:122 - CookieSpec selected: best-match
+2019-08-11 13:32:55 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+2019-08-11 13:32:55 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2019-08-11 13:32:55 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2019-08-11 13:32:55 DEBUG DefaultHttpClient:680 - Attempt 1 to execute request
+2019-08-11 13:32:55 DEBUG DefaultClientConnection:268 - Sending request: GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U HTTP/1.1
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U HTTP/1.1[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "Host: maps.googleapis.com[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "[\r][\n]"
+2019-08-11 13:32:55 DEBUG headers:272 - >> GET /maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U HTTP/1.1
+2019-08-11 13:32:55 DEBUG headers:275 - >> Host: maps.googleapis.com
+2019-08-11 13:32:55 DEBUG headers:275 - >> Connection: Keep-Alive
+2019-08-11 13:32:55 DEBUG headers:275 - >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+2019-08-11 13:32:55 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Date: Sun, 11 Aug 2019 08:02:52 GMT[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Expires: Sun, 11 Aug 2019 08:03:22 GMT[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Cache-Control: public, max-age=30[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Server: mafe[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "X-XSS-Protection: 0[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Server-Timing: gfet4t7; dur=256[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Accept-Ranges: none[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Vary: Accept-Language,Accept-Encoding[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-11 13:32:55 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2019-08-11 13:32:55 DEBUG headers:256 - << HTTP/1.1 200 OK
+2019-08-11 13:32:55 DEBUG headers:259 - << Content-Type: application/json; charset=UTF-8
+2019-08-11 13:32:55 DEBUG headers:259 - << Date: Sun, 11 Aug 2019 08:02:52 GMT
+2019-08-11 13:32:55 DEBUG headers:259 - << Expires: Sun, 11 Aug 2019 08:03:22 GMT
+2019-08-11 13:32:55 DEBUG headers:259 - << Cache-Control: public, max-age=30
+2019-08-11 13:32:55 DEBUG headers:259 - << Access-Control-Allow-Origin: *
+2019-08-11 13:32:55 DEBUG headers:259 - << Server: mafe
+2019-08-11 13:32:55 DEBUG headers:259 - << X-XSS-Protection: 0
+2019-08-11 13:32:55 DEBUG headers:259 - << X-Frame-Options: SAMEORIGIN
+2019-08-11 13:32:55 DEBUG headers:259 - << Server-Timing: gfet4t7; dur=256
+2019-08-11 13:32:55 DEBUG headers:259 - << Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+2019-08-11 13:32:55 DEBUG headers:259 - << Accept-Ranges: none
+2019-08-11 13:32:55 DEBUG headers:259 - << Vary: Accept-Language,Accept-Encoding
+2019-08-11 13:32:55 DEBUG headers:259 - << Transfer-Encoding: chunked
+2019-08-11 13:32:55 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-08-11 13:32:55 DEBUG wire:72 -  << "860[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "{[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "   "results" : [[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "      {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "         "address_components" : [[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "long_name" : "1600",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "short_name" : "1600",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "types" : [ "street_number" ][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "long_name" : "Amphitheatre Parkway",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "short_name" : "Amphitheatre Pkwy",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "types" : [ "route" ][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "long_name" : "Mountain View",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "short_name" : "Mountain View",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "types" : [ "locality", "political" ][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "long_name" : "Santa Clara County",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "short_name" : "Santa Clara County",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "types" : [ "administrative_area_level_2", "political" ][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "long_name" : "California",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "short_name" : "CA",[\n]"
+2019-08-11 13:32:55 DEBUG wire:86 -  << "               "types" : [ "administrative_area_l"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "evel_1", "political" ][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "long_name" : "United States",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "short_name" : "US",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "types" : [ "country", "political" ][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "long_name" : "94043",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "short_name" : "94043",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "types" : [ "postal_code" ][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            }[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "         ],[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "         "formatted_address" : "1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "         "geometry" : {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            "location" : {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "lat" : 37.4207827,[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "lng" : -122.0856306[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            "location_type" : "ROOFTOP",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            "viewport" : {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "northeast" : {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "                  "lat" : 37.4221316802915,[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "                  "lng" : -122.0842816197085[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               "southwest" : {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "                  "lat" : 37.4194337197085,[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "                  "lng" : -122.0869795802915[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "               }[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            }[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "         },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "         "place_id" : "ChIJtYuu0V25j4ARwu5e4wwRYgE",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "         "plus_code" : {[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            "compound_code" : "CWC7+8P Mountain View, California, United States",[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "            "global_code" : "849VCWC7+8P"[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "         },[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "         "types" : [ "street_address" ][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "      }[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "   ],[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "   "status" : "OK"[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "}[\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "0[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-11 13:32:55 DEBUG BasicClientConnectionManager:196 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@76c3e77a
+2019-08-11 13:32:55 DEBUG BasicClientConnectionManager:221 - Connection can be kept alive indefinitely
+2019-08-11 13:32:55 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA
+2019-08-11 13:32:55 ERROR ValidatorUtil:45 - Expected value -122.09 in field longitude, but actual value obtained -122.08
+2019-08-11 13:32:55 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U
+2019-08-11 13:32:55 DEBUG BasicClientConnectionManager:158 - Get connection for route {s}->https://maps.googleapis.com
+2019-08-11 13:32:55 DEBUG DefaultHttpClient:431 - Stale connection check
+2019-08-11 13:32:55 DEBUG RequestAddCookies:122 - CookieSpec selected: best-match
+2019-08-11 13:32:55 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+2019-08-11 13:32:55 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2019-08-11 13:32:55 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2019-08-11 13:32:55 DEBUG DefaultHttpClient:680 - Attempt 1 to execute request
+2019-08-11 13:32:55 DEBUG DefaultClientConnection:268 - Sending request: GET /maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U HTTP/1.1
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "GET /maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U HTTP/1.1[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "Host: maps.googleapis.com[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+2019-08-11 13:32:55 DEBUG wire:72 -  >> "[\r][\n]"
+2019-08-11 13:32:55 DEBUG headers:272 - >> GET /maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U HTTP/1.1
+2019-08-11 13:32:55 DEBUG headers:275 - >> Host: maps.googleapis.com
+2019-08-11 13:32:55 DEBUG headers:275 - >> Connection: Keep-Alive
+2019-08-11 13:32:55 DEBUG headers:275 - >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+2019-08-11 13:32:56 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Date: Sun, 11 Aug 2019 08:02:53 GMT[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Cache-Control: no-cache, must-revalidate[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Server: mafe[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "X-XSS-Protection: 0[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Server-Timing: gfet4t7; dur=236[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Accept-Ranges: none[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Vary: Accept-Language,Accept-Encoding[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-11 13:32:56 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2019-08-11 13:32:56 DEBUG headers:256 - << HTTP/1.1 200 OK
+2019-08-11 13:32:56 DEBUG headers:259 - << Content-Type: application/json; charset=UTF-8
+2019-08-11 13:32:56 DEBUG headers:259 - << Date: Sun, 11 Aug 2019 08:02:53 GMT
+2019-08-11 13:32:56 DEBUG headers:259 - << Pragma: no-cache
+2019-08-11 13:32:56 DEBUG headers:259 - << Expires: Fri, 01 Jan 1990 00:00:00 GMT
+2019-08-11 13:32:56 DEBUG headers:259 - << Cache-Control: no-cache, must-revalidate
+2019-08-11 13:32:56 DEBUG headers:259 - << Access-Control-Allow-Origin: *
+2019-08-11 13:32:56 DEBUG headers:259 - << Server: mafe
+2019-08-11 13:32:56 DEBUG headers:259 - << X-XSS-Protection: 0
+2019-08-11 13:32:56 DEBUG headers:259 - << X-Frame-Options: SAMEORIGIN
+2019-08-11 13:32:56 DEBUG headers:259 - << Server-Timing: gfet4t7; dur=236
+2019-08-11 13:32:56 DEBUG headers:259 - << Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+2019-08-11 13:32:56 DEBUG headers:259 - << Accept-Ranges: none
+2019-08-11 13:32:56 DEBUG headers:259 - << Vary: Accept-Language,Accept-Encoding
+2019-08-11 13:32:56 DEBUG headers:259 - << Transfer-Encoding: chunked
+2019-08-11 13:32:56 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-08-11 13:32:56 DEBUG wire:72 -  << "10d[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "{[\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "   "error_message" : "You have exceeded your daily request quota for this API. If you did not set a custom daily request quota, verify your project has an active billing account: http://g.co/dev/maps-no-account",[\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "   "results" : [],[\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "   "status" : "OVER_QUERY_LIMIT"[\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "}[\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "0[\r][\n]"
+2019-08-11 13:32:56 DEBUG wire:72 -  << "[\r][\n]"
+2019-08-11 13:32:56 DEBUG BasicClientConnectionManager:196 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7133da86
+2019-08-11 13:32:56 DEBUG BasicClientConnectionManager:221 - Connection can be kept alive indefinitely
+2019-08-11 13:34:15 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U
+2019-08-11 13:34:17 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyDDL1u2o6OqD4eCmLkN6u1beCpCIiVK94U
+2019-08-11 13:41:45 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyAhLYccMJn3mpwbD_oWRLIHEtSIxbdSgkU
+2019-08-11 13:41:47 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA
+2019-08-11 13:41:47 ERROR ValidatorUtil:45 - Expected value -122.09 in field longitude, but actual value obtained -122.08
+2019-08-11 13:41:47 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyAhLYccMJn3mpwbD_oWRLIHEtSIxbdSgkU
+2019-08-11 13:45:42 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyB0OH4mhEOLORkbf9rC6L2Tyy50khUSrwk
+2019-08-11 13:45:44 INFO  ResponseUtil:33 - Formatted address= 1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA
+2019-08-11 13:45:44 INFO  RequestUtil:20 - Calling URI: https://maps.googleapis.com/maps/api/geocode/json?address=Parimala+Sunridge+Varthur+Main+Road+560066&key=AIzaSyB0OH4mhEOLORkbf9rC6L2Tyy50khUSrwk

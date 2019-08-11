@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [GoogleAPITest]">
+  <listeners>
+    <listener class-name="com.google.listeners.Listener"/>
+  </listeners>
+  <test name="GeoCodeTest(failed)">
+    <classes>
+      <class name="com.google.apitest.TestGeoCode">
+        <methods>
+          <include name="testGeoCodeCorrectness" invocation-numbers="1"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.google.apitest.TestGeoCode -->
+    </classes>
+  </test> <!-- GeoCodeTest(failed) -->
+</suite> <!-- Failed suite [GoogleAPITest] -->

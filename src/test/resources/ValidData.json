@@ -1,0 +1,12 @@
+[
+	{
+		"address":"1600+Amphitheatre+Parkway,+Mountain+View,+CA",
+		"lattitude":37.42,
+		"longitude":-122.09
+	},
+    {
+		"address":"Parimala+Sunridge+Varthur+Main+Road+560066",
+		"lattitude":12.96,
+		"longitude":78.72
+	}
+]

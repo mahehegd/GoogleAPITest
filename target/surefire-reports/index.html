@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-GoogleAPITest">
+              <span class="suite-name border-failed">GoogleAPITest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-GoogleAPITest">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-GoogleAPITest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-GoogleAPITest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-GoogleAPITest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-GoogleAPITest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-GoogleAPITest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-GoogleAPITest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GoogleAPITest" class="hide-methods failed suite-GoogleAPITest"> (hide)</a> <!-- hide-methods failed suite-GoogleAPITest -->
+                      <a href="#" panel-name="suite-GoogleAPITest" class="show-methods failed suite-GoogleAPITest"> (show)</a> <!-- show-methods failed suite-GoogleAPITest -->
+                    </span>
+                    <div class="method-list-content failed suite-GoogleAPITest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GoogleAPITest" title="com.google.apitest.TestGeoCode" hash-for-method="testGeoCodeCorrectness(com.google.model.GeoData@16610890)">testGeoCodeCorrectness(com.google.model.GeoData@16610890)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GoogleAPITest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-GoogleAPITest" class="hide-methods passed suite-GoogleAPITest"> (hide)</a> <!-- hide-methods passed suite-GoogleAPITest -->
+                      <a href="#" panel-name="suite-GoogleAPITest" class="show-methods passed suite-GoogleAPITest"> (show)</a> <!-- show-methods passed suite-GoogleAPITest -->
+                    </span>
+                    <div class="method-list-content passed suite-GoogleAPITest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GoogleAPITest" title="com.google.apitest.TestGeoCode" hash-for-method="testGeoCodeCorrectness(com.google.model.GeoData@76c3e77a)">testGeoCodeCorrectness(com.google.model.GeoData@76c3e77a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-GoogleAPITest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-GoogleAPITest" class="panel GoogleAPITest">
+          <div class="suite-GoogleAPITest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.google.apitest.TestGeoCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGeoCodeCorrectness(com.google.model.GeoData@16610890)">
+                  </a> <!-- testGeoCodeCorrectness(com.google.model.GeoData@16610890) -->
+                  <span class="method-name">testGeoCodeCorrectness</span>
+                  <span class="parameters">(com.google.model.GeoData@16610890)</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.google.CallerUtils.ResponseUtil.getGeoDataFromHttpResponse(ResponseUtil.java:30)
+	at com.google.apitest.TestGeoCode.testGeoCodeCorrectness(TestGeoCode.java:75)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GoogleAPITest-class-failed -->
+          <div class="suite-GoogleAPITest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.google.apitest.TestGeoCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGeoCodeCorrectness(com.google.model.GeoData@76c3e77a)">
+                  </a> <!-- testGeoCodeCorrectness(com.google.model.GeoData@76c3e77a) -->
+                  <span class="method-name">testGeoCodeCorrectness</span>
+                  <span class="parameters">(com.google.model.GeoData@76c3e77a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GoogleAPITest-class-passed -->
+        </div> <!-- panel GoogleAPITest -->
+        <div panel-name="test-xml-GoogleAPITest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/hegdemh/Desktop/Personal/others/GoogleLocationAPITest/googleapitest/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;GoogleAPITest&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.google.listeners.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;GeoCodeTest&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.google.*&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.google.apitest.TestGeoCode&quot;/&gt;
+      &lt;class name=&quot;com.google.CallerUtils.RequestUtil&quot;/&gt;
+      &lt;class name=&quot;com.google.CallerUtils.ResponseUtil&quot;/&gt;
+      &lt;class name=&quot;com.google.dataprovider.JsonDataLoader&quot;/&gt;
+      &lt;class name=&quot;com.google.listeners.Listener&quot;/&gt;
+      &lt;class name=&quot;com.google.model.GeoData&quot;/&gt;
+      &lt;class name=&quot;com.google.validator.Validator&quot;/&gt;
+      &lt;class name=&quot;com.google.validator.ValidatorUtil&quot;/&gt;
+      &lt;class name=&quot;com.google.apitest.TestGeoCode&quot;/&gt;
+      &lt;class name=&quot;com.google.CallerUtils.RequestUtil&quot;/&gt;
+      &lt;class name=&quot;com.google.CallerUtils.ResponseUtil&quot;/&gt;
+      &lt;class name=&quot;com.google.dataprovider.JsonDataLoader&quot;/&gt;
+      &lt;class name=&quot;com.google.listeners.Listener&quot;/&gt;
+      &lt;class name=&quot;com.google.model.GeoData&quot;/&gt;
+      &lt;class name=&quot;com.google.validator.Validator&quot;/&gt;
+      &lt;class name=&quot;com.google.validator.ValidatorUtil&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonParseException&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.Gson$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonDeserializationContext&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.FieldNamingStrategy&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.DefaultDateTypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.TreeTypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonDeserializer&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.InstanceCreator&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.Gson&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonNull&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.Gson$3&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonObject&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.Gson$2&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.Gson$FutureTypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.stream.JsonToken&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.stream.MalformedJsonException&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.stream.JsonReader$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.stream.JsonScope&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.stream.JsonWriter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.stream.JsonWriter$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.stream.StringPool&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.stream.JsonReader&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.stream.JsonReader$2&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.TypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.FieldNamingPolicy&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.Gson$5&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonArray&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.FieldNamingPolicy$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap$KeySet&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.UnsafeAllocator$4&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap$EntrySet&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ObjectConstructor&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ConstructorConstructor$6&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$7&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.CollectionTypeAdapterFactory&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.MapTypeAdapterFactory&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$32&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$22&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$30&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$16&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.JsonTreeWriter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TimeTypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$24&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$3&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.DateTypeAdapter$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$19&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$8&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.JsonTreeReader$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.ObjectTypeAdapter$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.SqlDateTypeAdapter$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$27&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$26&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$15&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$18&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$10&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$13&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$12&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$29&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.ArrayTypeAdapter$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$9&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$14&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$25&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.ArrayTypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.JsonTreeWriter$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.DateTypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.SqlDateTypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.JsonTreeReader&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.ReflectiveTypeAdapterFactory&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$23&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$17&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$28&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TimeTypeAdapter$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$11&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.ObjectTypeAdapter$2&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.ObjectTypeAdapter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$21&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$4&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$20&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$22$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$5&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$2&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$31&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.bind.TypeAdapters$6&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ConstructorConstructor$7&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ConstructorConstructor&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.UnsafeAllocator&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.Streams&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.$Gson$Types&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.$Gson$Types$WildcardTypeImpl&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.LazilyParsedNumber&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap$LinkedEntry&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ConstructorConstructor$3&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap$Values$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.Primitives&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap$LinkedHashIterator&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap$EntrySet$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.JsonReaderInternalAccess&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.Streams$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.Excluder&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.UnsafeAllocator$2&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.Streams$AppendableWriter$CurrentWrite&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ConstructorConstructor$4&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.UnsafeAllocator$3&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap$Values&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ConstructorConstructor$2&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.StringMap$KeySet$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.UnsafeAllocator$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.Excluder$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ConstructorConstructor$5&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.$Gson$Preconditions&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.Streams$AppendableWriter&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ConstructorConstructor$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.internal.ConstructorConstructor$8&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.FieldNamingPolicy$4&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.annotations.Expose&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.annotations.Since&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.annotations.SerializedName&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.annotations.Until&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.ExclusionStrategy&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.TreeTypeAdapter$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.FieldNamingPolicy$3&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonParser&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.Gson$6&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.LongSerializationPolicy$2&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.FieldAttributes&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonStreamParser&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonPrimitive&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.FieldNamingPolicy$5&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.FieldNamingPolicy$2&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.LongSerializationPolicy&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonIOException&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonSerializationContext&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonElement&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonSyntaxException&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.JsonSerializer&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.TypeAdapterFactory&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.Gson$4&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.TreeTypeAdapter$SingleTypeFactory&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.reflect.TypeToken&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.LongSerializationPolicy$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.TypeAdapter$1&quot;/&gt;
+      &lt;class name=&quot;com.google.gson.GsonBuilder&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GeoCodeTest --&gt;
+&lt;/suite&gt; &lt;!-- GoogleAPITest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-GoogleAPITest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for GoogleAPITest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">GeoCodeTest (171 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-GoogleAPITest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for GoogleAPITest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-GoogleAPITest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for GoogleAPITest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_GoogleAPITest');
+function tableData_GoogleAPITest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testGeoCodeCorrectness')
+data.setCell(0, 2, 'com.google.apitest.TestGeoCode')
+data.setCell(0, 3, 1336);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testGeoCodeCorrectness')
+data.setCell(1, 2, 'com.google.apitest.TestGeoCode')
+data.setCell(1, 3, 358);
+window.suiteTableData['GoogleAPITest']= { tableData: data, tableDiv: 'times-div-GoogleAPITest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-GoogleAPITest">
+              </div> <!-- times-div-GoogleAPITest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-GoogleAPITest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for GoogleAPITest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testGeoCodeCorrectness(com.google.model.GeoData@76c3e77a)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed executing following method : TestGeoCode.testGeoCodeCorrectness</span>
+                <span class="reporter-method-output">Test Method resides in com.google.apitest.TestGeoCode</span>
+                <span class="reporter-method-output">Test Method had the following parameters : nullcom.google.model.GeoData@76c3e77a,</span>
+                <span class="reporter-method-output">Test Status: Pass</span>
+                <span class="reporter-method-output">About to begin executing following method : TestGeoCode.afterMethod</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testGeoCodeCorrectness(com.google.model.GeoData@16610890)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed executing following method : TestGeoCode.testGeoCodeCorrectness</span>
+                <span class="reporter-method-output">Test Method resides in com.google.apitest.TestGeoCode</span>
+                <span class="reporter-method-output">Test Method had the following parameters : nullcom.google.model.GeoData@16610890,</span>
+                <span class="reporter-method-output">Test Status: Failed</span>
+                <span class="reporter-method-output">About to begin executing following method : TestGeoCode.afterMethod</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-GoogleAPITest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-GoogleAPITest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.google.apitest.TestGeoCode</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGeoCodeCorrectness(com.google.model.GeoData@76c3e77a)</span>
+                <span class="method-start">5 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1341 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1342 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGeoCodeCorrectness(com.google.model.GeoData@16610890)</span>
+                <span class="method-start">1353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1719 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
